@@ -36,6 +36,13 @@
     background: transparent;
     cursor: pointer;
     width: 100%;
+    background: linear-gradient(
+      to right,
+      var(--primary-color) 0%,
+      var(--primary-color) var(--range-value),
+      var(--secondary-text-color) var(--range-value),
+      var(--secondary-text-color) 100%
+    );
 
     &::-webkit-slider-runnable-track {
       border-radius: 6px;
