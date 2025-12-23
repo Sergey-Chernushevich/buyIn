@@ -55,7 +55,6 @@ const Amount = () => {
         step={0.1}
         value={Number(amount)}
         onChange={setValue}
-        // style={{ "--range-value": `${amount}%` }}
         style={{ "--range-value": `${amount * 2}%` }}
       />
     </div>
