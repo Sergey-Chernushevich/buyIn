@@ -1,0 +1,106 @@
+.buyIn {
+  border-radius: 4px;
+  width: 400px;
+
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+  background: #1d1e22;
+  position: relative;
+  padding: 16px 32px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 40px;
+    background: radial-gradient(
+      55.19% 100.85% at 49.52% -0.85%,
+      #18a748 0%,
+      rgba(24, 167, 72, 0.45) 22.64%,
+      rgba(24, 167, 72, 0.15) 55.46%,
+      rgba(24, 167, 72, 0.01) 100%
+    );
+    left: 0;
+    top: 0;
+  }
+  &__auto-button {
+    margin-bottom: 36px;
+  }
+  &__header {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 32px;
+  }
+  &__close-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 68px;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  &__amount {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  &__amount-title {
+    display: flex;
+    gap: 4px;
+    color: var(--secondary-text-color);
+  }
+}
+
+.game {
+  padding: 15px 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  &__type-title {
+    color: var(--secondary-text-color);
+  }
+  &__type-title-wrapper {
+    display: flex;
+    gap: 4px;
+  }
+}
+
+.available-balance {
+  margin-bottom: 21px;
+  padding: 0 12px;
+  &__title {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    &-name {
+      color: var(--secondary-text-color);
+    }
+  }
+  &__values {
+    background: #232429;
+    margin-left: -12px;
+    margin-right: -12px;
+    border-radius: 4px;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__value {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__value-title {
+    color: var(--secondary-text-color);
+  }
+  &__value-value_cash {
+    color: #ffca61;
+  }
+}

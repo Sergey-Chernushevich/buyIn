@@ -1,0 +1,47 @@
+.pay-options {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  border-bottom: 1px solid var(--secondary-text-color);
+
+  &__option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  &__radio {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  input:checked + .pay-options__radio {
+    border: 1px solid var(--primary-color);
+    opacity: 1;
+  }
+  input:checked + .pay-options__radio::after {
+    opacity: 1;
+  }
+}
